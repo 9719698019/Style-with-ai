@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Style With AI</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Try-On Outfit App</h1>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+      <label for="image">Upload your image:</label>
+      <input type="file" name="image" accept="image/*" required>
+      <label for="description">Outfit Description:</label>
+      <input type="text" name="description" placeholder="Describe your outfit..." required>
+      <button type="submit">Try it on!</button>
+    </form>
+  </div>
+</body>
+</html>
