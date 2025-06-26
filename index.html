@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style with AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>AI Outfit Try-On</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label>Select your image:</label><br>
+    <input type="file" name="user_image" accept="image/*" required><br><br>
+    
+    <label>Select outfit:</label><br>
+    <input type="file" name="outfit_image" accept="image/*" required><br><br>
+    
+    <button type="submit">Try Outfit</button>
+  </form>
+</body>
+</html>
