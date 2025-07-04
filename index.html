@@ -1,9 +1,12 @@
-<form action="/upload" method="POST" enctype="multipart/form-data">
-    <label>Upload your image:</label><br>
-    <input type="file" name="user_image" required><br><br>
-
-    <label>Enter outfit description:</label><br>
-    <input type="text" name="description" required><br><br>
-
-    <button type="submit">Upload</button>
-</form>
+<!doctype html>
+<html>
+<head><title>AI Try-On Outfit App</title></head>
+<body>
+  <h1>AI Try-On Outfit App</h1>
+  <form method="post" enctype="multipart/form-data">
+    Upload your image: <input type="file" name="image">
+    Outfit Description: <input type="text" name="description">
+    <input type="submit" value="Try it on!">
+  </form>
+</body>
+</html>
