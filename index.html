@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AI Outfit Try-On</title>
-</head>
-<body>
-    <h1>AI Try-On Outfit App</h1>
-    <form method="POST" enctype="multipart/form-data" action="/upload">
-        <label>Upload your image:</label>
-        <input type="file" name="file" required><br><br>
-        <button type="submit">Upload</button>
-    </form>
-</body>
-</html>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <label>Upload your image:</label><br>
+    <input type="file" name="user_image" required><br><br>
+
+    <label>Enter outfit description:</label><br>
+    <input type="text" name="description" required><br><br>
+
+    <button type="submit">Upload</button>
+</form>
